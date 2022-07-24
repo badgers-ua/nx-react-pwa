@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "react-pwa": "packages/react-pwa",
+    "react-pwa-e2e": "e2e/react-pwa-e2e"
+  }
+}

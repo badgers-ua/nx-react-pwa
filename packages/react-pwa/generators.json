@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "react-pwa",
+  "version": "0.0.1",
+  "generators": {
+    "react-pwa": {
+      "factory": "./src/generators/react-pwa/generator",
+      "schema": "./src/generators/react-pwa/schema.json",
+      "description": "react-pwa generator"
+    }
+  }
+}
