@@ -1,11 +1,34 @@
-# nx-react-pwa
+<p align="center">
+  <a href="https://github.com/badgers-ua/" target="blank"><img src="https://avatars.githubusercontent.com/u/106803527?s=200&v=4" width="120" alt="Badgers UA Logo" /></a>
+</p>
 
-This library was generated with [Nx](https://nx.dev).
+  <p align="center">Plugin for <a href="https://nx.dev" target="_blank">nx.dev</a>  that adds offline PWA capabilities to a react app inside nx workspace  
+    <p align="center">
+<a href="https://www.npmjs.com/package/@bdgr/nx-react-pwa" target="_blank"><img src="https://img.shields.io/npm/v/@bdgr/nx-react-pwa" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/package/@bdgr/nx-react-pwa" target="_blank"><img src="https://img.shields.io/npm/l/@bdgr/nx-react-pwa" alt="Package License" /></a>
 
-## Building
+## Getting started
 
-Run `nx build nx-react-pwa` to build the library.
+Install package as dev dependency
 
-## Running unit tests
+### npm:
 
-Run `nx test nx-react-pwa` to execute the unit tests via [Jest](https://jestjs.io).
+```bash
+npm i @bdgr/nx-react-pwa --save-dev
+```
+
+### yarn:
+
+```bash
+yarn add @bdgr/nx-react-pwa -D
+```
+
+Inside nx dev directory run:
+
+```bash
+nx g @bdgr/nx-react-pwa:init
+```
+
+## License
+
+[MIT © 2022 Badgers UA](LICENSE)

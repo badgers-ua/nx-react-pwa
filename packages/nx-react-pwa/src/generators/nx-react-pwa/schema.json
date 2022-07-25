@@ -12,7 +12,7 @@
         "$source": "argv",
         "index": 0
       },
-      "x-prompt": "What react app should be extended with PWA capabilities?"
+      "x-prompt": "What react app should be extended with PWA capabilities? (Enter nx workspace app name)"
     }
   },
   "required": ["project"]
