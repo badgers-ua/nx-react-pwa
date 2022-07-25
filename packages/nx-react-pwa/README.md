@@ -29,8 +29,6 @@ Inside nx dev directory run:
 nx g @bdgr/nx-react-pwa:init
 ```
 
-### yarn
-
 ## License
 
 [MIT licensed](LICENSE)

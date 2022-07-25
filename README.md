@@ -10,3 +10,7 @@
 | Codebase                              |                   Description                   |
 | :------------------------------------ | :---------------------------------------------: |
 | [nx-react-pwa](packages/nx-react-pwa) | plugin adds offline PWA support to nx react app |
+
+## License
+
+[MIT licensed](LICENSE)
