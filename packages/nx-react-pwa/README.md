@@ -4,8 +4,8 @@
 
   <p align="center">Plugin for <a href="https://nx.dev" target="_blank">nx.dev</a>  that adds offline PWA capabilities to a react app inside nx workspace  
     <p align="center">
-<a href="https://www.npmjs.com/package/@bdgr/nx-react-pwa" target="_blank"><img src="https://img.shields.io/npm/v/@bdgr/nx-react-pwa" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/package/@bdgr/nx-react-pwa" target="_blank"><img src="https://img.shields.io/npm/l/@bdgr/nx-react-pwa" alt="Package License" /></a>
+<a href="https://www.npmjs.com/package/@badgers-ua/nx-react-pwa" target="_blank"><img src="https://img.shields.io/npm/v/@badgers-ua/nx-react-pwa" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/package/@badgers-ua/nx-react-pwa" target="_blank"><img src="https://img.shields.io/npm/l/@badgers-ua/nx-react-pwa" alt="Package License" /></a>
 
 ## Getting started
 
@@ -14,19 +14,19 @@ Install package as dev dependency
 ### npm:
 
 ```bash
-npm i @bdgr/nx-react-pwa --save-dev
+npm i @badgers-ua/nx-react-pwa --save-dev
 ```
 
 ### yarn:
 
 ```bash
-yarn add @bdgr/nx-react-pwa -D
+yarn add @badgers-ua/nx-react-pwa -D
 ```
 
 Inside nx dev directory run:
 
 ```bash
-nx g @bdgr/nx-react-pwa:init
+nx g @badgers-ua/nx-react-pwa:init
 ```
 
 ## License

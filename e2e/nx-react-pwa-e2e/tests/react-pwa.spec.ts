@@ -14,7 +14,7 @@ describe('react-pwa e2e', () => {
   // on a unique project in the workspace, such that they
   // are not dependant on one another.
   beforeAll(() => {
-    ensureNxProject('@bdgr/react-pwa', 'dist/packages/react-pwa');
+    ensureNxProject('@badgers-ua/react-pwa', 'dist/packages/react-pwa');
   });
 
   afterAll(() => {
@@ -25,7 +25,9 @@ describe('react-pwa e2e', () => {
 
   it('should create react-pwa', async () => {
     const project = uniq('react-pwa');
-    await runNxCommandAsync(`generate @bdgr/react-pwa:react-pwa ${project}`);
+    await runNxCommandAsync(
+      `generate @badgers-ua/react-pwa:react-pwa ${project}`
+    );
     const result = await runNxCommandAsync(`build ${project}`);
     expect(result.stdout).toContain('Executor ran');
   }, 120000);
@@ -34,7 +36,7 @@ describe('react-pwa e2e', () => {
     it('should create src in the specified directory', async () => {
       const project = uniq('react-pwa');
       await runNxCommandAsync(
-        `generate @bdgr/react-pwa:react-pwa ${project} --directory subdir`
+        `generate @badgers-ua/react-pwa:react-pwa ${project} --directory subdir`
       );
       expect(() =>
         checkFilesExist(`libs/subdir/${project}/src/index.ts`)
@@ -45,9 +47,9 @@ describe('react-pwa e2e', () => {
   describe('--tags', () => {
     it('should add tags to the project', async () => {
       const projectName = uniq('react-pwa');
-      ensureNxProject('@bdgr/react-pwa', 'dist/packages/react-pwa');
+      ensureNxProject('@badgers-ua/react-pwa', 'dist/packages/react-pwa');
       await runNxCommandAsync(
-        `generate @bdgr/react-pwa:react-pwa ${projectName} --tags e2etag,e2ePackage`
+        `generate @badgers-ua/react-pwa:react-pwa ${projectName} --tags e2etag,e2ePackage`
       );
       const project = readJson(`libs/${projectName}/project.json`);
       expect(project.tags).toEqual(['e2etag', 'e2ePackage']);

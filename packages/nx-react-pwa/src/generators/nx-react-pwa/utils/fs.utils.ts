@@ -3,7 +3,7 @@ export const copyFolder = (projectRoot: string) => {
   const reflect = require('@alumna/reflect');
 
   reflect({
-    src: 'node_modules/@bdgr/nx-react-pwa/src/generators/nx-react-pwa/files/src/',
+    src: 'node_modules/@badgers-ua/nx-react-pwa/src/generators/nx-react-pwa/files/src/',
     dest: `${projectRoot}/src`,
     recursive: true,
     delete: false,
