@@ -1,6 +1,6 @@
 {
   "name": "@bdgr/nx-react-pwa",
-  "version": "1.0.0",
+  "version": "0.0.6",
   "description": "Plugin for nx.dev that adds offline PWA capabilities to a react app inside nx workspace",
   "license": "MIT",
   "repository": {
