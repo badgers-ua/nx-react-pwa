@@ -1,6 +1,6 @@
 {
   "name": "@bdgr/nx-react-pwa",
-  "version": "0.0.14",
+  "version": "0.0.3",
   "main": "src/index.js",
   "generators": "./generators.json",
   "executors": "./executors.json",

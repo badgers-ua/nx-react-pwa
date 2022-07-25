@@ -5,7 +5,7 @@
   "generators": {
     "init": {
       "factory": "./src/generators/nx-react-pwa/generator",
-      "schema": "./src/generators/react-pwa/schema.json",
+      "schema": "./src/generators/nx-react-pwa/schema.json",
       "description": "nx-react-pwa generator"
     }
   }
