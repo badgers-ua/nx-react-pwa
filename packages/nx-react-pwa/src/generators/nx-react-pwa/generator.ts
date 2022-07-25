@@ -5,9 +5,9 @@ import {
   Tree,
 } from '@nrwl/devkit';
 import { NormalizedSchema, ReactPwaGeneratorSchema } from './schema';
+import { updateIndexHtml } from './utils/ast.utils';
 import { copyFolder, insertImportToMainTs } from './utils/fs.utils';
 import { updatePackageJson, updateProjectJson } from './utils/json.utils';
-import { updateIndexHtml } from './utils/ast.utils';
 
 function normalizeOptions(
   tree: Tree,
