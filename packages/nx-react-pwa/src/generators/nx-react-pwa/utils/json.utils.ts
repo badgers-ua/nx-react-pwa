@@ -18,7 +18,7 @@ export const updateProjectJson = (
     projectJson.targets.build.options.assets = [
       ...projectJson.targets.build.options.assets,
       `apps/${options.project}/src/robots.txt`,
-      `apps/${options.project}/manifest.json`,
+      `apps/${options.project}/src/manifest.json`,
     ];
     return projectJson;
   });
