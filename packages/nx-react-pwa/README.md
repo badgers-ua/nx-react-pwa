@@ -31,4 +31,4 @@ nx g @bdgr/nx-react-pwa:init
 
 ## License
 
-[MIT licensed](LICENSE)
+[MIT © 2022 Badgers UA](LICENSE)

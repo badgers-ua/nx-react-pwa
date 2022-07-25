@@ -13,4 +13,4 @@
 
 ## License
 
-[MIT licensed](LICENSE)
+[MIT © 2022 Badgers UA](LICENSE)
