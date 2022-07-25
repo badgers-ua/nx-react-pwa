@@ -6,7 +6,11 @@ import {
 } from '@nrwl/devkit';
 import { NormalizedSchema, ReactPwaGeneratorSchema } from './schema';
 import { updateIndexHtml } from './utils/ast.utils';
-import { copyFolder, insertImportToMainTs } from './utils/fs.utils';
+import {
+  copyFolder,
+  createWorkBoxConfigJs,
+  insertImportToMainTs,
+} from './utils/fs.utils';
 import { updatePackageJson, updateProjectJson } from './utils/json.utils';
 
 function normalizeOptions(
@@ -38,6 +42,7 @@ export default async function (tree: Tree, options: ReactPwaGeneratorSchema) {
 
   updatePackageJson(tree);
   updateProjectJson(tree, options);
+  createWorkBoxConfigJs(options.project);
 
   addFiles(tree, normalizedOptions);
   await formatFiles(tree);

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 export const copyFolder = (projectRoot: string) => {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   const reflect = require('@alumna/reflect');
@@ -23,4 +24,22 @@ export const insertImportToMainTs = (projectRoot: string) => {
   fs.writeFile(mainTsxFilePath, text, function (err) {
     if (err) return console.log(err);
   });
+};
+
+export const createWorkBoxConfigJs = (projectRoot: string) => {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const fs = require('fs');
+
+  const config = `module.exports = {
+      globDirectory: "dist/apps/${projectRoot}",
+      globPatterns: ['**/*.{txt,ico,html,js}'],
+      swDest: "dist/apps/${projectRoot}/service-worker.js",
+    };`;
+
+  const prettier = require('prettier');
+  const formattedConfig: string = prettier.format(config, {
+    parser: 'typescript',
+  });
+
+  fs.writeFileSync(`./apps/${projectRoot}/workbox-config.js`, formattedConfig);
 };
