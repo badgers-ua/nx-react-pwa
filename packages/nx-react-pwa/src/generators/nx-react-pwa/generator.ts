@@ -6,7 +6,7 @@ import {
 } from '@nrwl/devkit';
 import { readFileIfExisting } from '@nrwl/workspace/src/core/file-utils';
 import { NormalizedSchema, ReactPwaGeneratorSchema } from './schema';
-import { copyFolder } from './utils/fs.utils';
+import { copyFolder, insertImportToMainTs } from './utils/fs.utils';
 import { updatePackageJson, updateProjectJson } from './utils/json.utils';
 
 function normalizeOptions(
@@ -27,6 +27,7 @@ function addFiles(tree: Tree, options: NormalizedSchema) {
   const projectRoot = `${appsDir}/${options.project}`;
 
   copyFolder(projectRoot);
+  insertImportToMainTs(projectRoot);
 
   // TODO: Update index.html
   const indexHTML = readFileIfExisting(

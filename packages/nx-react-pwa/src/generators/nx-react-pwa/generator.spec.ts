@@ -1,12 +1,12 @@
+import { readProjectConfiguration, Tree } from '@nrwl/devkit';
 import { createTreeWithEmptyWorkspace } from '@nrwl/devkit/testing';
-import { Tree, readProjectConfiguration } from '@nrwl/devkit';
 
 import generator from './generator';
 import { ReactPwaGeneratorSchema } from './schema';
 
 describe('react-pwa generator', () => {
   let appTree: Tree;
-  const options: ReactPwaGeneratorSchema = { name: 'test' };
+  const options: ReactPwaGeneratorSchema = { project: 'test' };
 
   beforeEach(() => {
     appTree = createTreeWithEmptyWorkspace();
