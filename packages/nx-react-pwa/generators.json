@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "nx-react-pwa",
+  "version": "0.0.1",
+  "generators": {
+    "init": {
+      "factory": "./src/generators/nx-react-pwa/generator",
+      "schema": "./src/generators/react-pwa/schema.json",
+      "description": "nx-react-pwa generator"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/nx-react-pwa/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/nx-react-pwa",
+        "main": "packages/nx-react-pwa/src/index.ts",
+        "tsConfig": "packages/nx-react-pwa/tsconfig.lib.json",
+        "assets": [
+          "packages/nx-react-pwa/*.md",
+          {
+            "input": "./packages/nx-react-pwa/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/nx-react-pwa/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/nx-react-pwa",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./packages/nx-react-pwa",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/nx-react-pwa/**/*.ts",
+          "packages/nx-react-pwa/generators.json",
+          "packages/nx-react-pwa/executors.json",
+          "packages/nx-react-pwa/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/nx-react-pwa"],
+      "options": {
+        "jestConfig": "packages/nx-react-pwa/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

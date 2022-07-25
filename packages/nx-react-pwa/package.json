@@ -1,0 +1,10 @@
+{
+  "name": "@bdgr/nx-react-pwa",
+  "version": "0.0.14",
+  "main": "src/index.js",
+  "generators": "./generators.json",
+  "executors": "./executors.json",
+  "dependencies": {
+    "@alumna/reflect": "^1.0.5"
+  }
+}

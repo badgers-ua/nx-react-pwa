@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@bdgr/react-pwa": ["packages/react-pwa/src/index.ts"]
+      "@bdgr/nx-react-pwa": ["packages/nx-react-pwa/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
