@@ -4,10 +4,10 @@ import {
   installPackagesTask,
   Tree,
 } from '@nrwl/devkit';
-import { readFileIfExisting } from '@nrwl/workspace/src/core/file-utils';
 import { NormalizedSchema, ReactPwaGeneratorSchema } from './schema';
 import { copyFolder, insertImportToMainTs } from './utils/fs.utils';
 import { updatePackageJson, updateProjectJson } from './utils/json.utils';
+import { updateIndexHtml } from './utils/ast.utils';
 
 function normalizeOptions(
   tree: Tree,
@@ -29,10 +29,8 @@ function addFiles(tree: Tree, options: NormalizedSchema) {
   copyFolder(projectRoot);
   insertImportToMainTs(projectRoot);
 
-  // TODO: Update index.html
-  const indexHTML = readFileIfExisting(
-    `apps/${options.project}/src/index.html`
-  );
+  const indexHtmlFilePath = `apps/${options.project}/src/index.html`;
+  updateIndexHtml(indexHtmlFilePath);
 }
 
 export default async function (tree: Tree, options: ReactPwaGeneratorSchema) {

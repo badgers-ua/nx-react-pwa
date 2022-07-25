@@ -12,6 +12,7 @@
   "generators": "./generators.json",
   "executors": "./executors.json",
   "dependencies": {
-    "@alumna/reflect": "^1.0.5"
+    "@alumna/reflect": "^1.0.5",
+    "parse5-utils": "^2.0.0"
   }
 }
