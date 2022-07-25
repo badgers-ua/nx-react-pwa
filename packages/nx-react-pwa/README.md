@@ -26,7 +26,7 @@ yarn add @bdgr/nx-react-pwa -D
 Inside nx dev directory run:
 
 ```bash
-npx nx g @bdgr/nx-react-pwa:init
+nx g @bdgr/nx-react-pwa:init
 ```
 
 ### yarn
