@@ -1,5 +1,5 @@
 {
-  "name": "bdgr",
+  "name": "@badgers-ua/nx-react-pwa",
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
