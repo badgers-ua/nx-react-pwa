@@ -22,6 +22,21 @@ export const updateProjectJson = (
       `apps/${options.project}/src/manifest.json`,
     ];
 
+    projectJson.targets.serve.configurations.development = {
+      ...projectJson.targets.serve.configurations.development,
+      buildTarget: `${options.project}:pre-build:development`,
+    };
+
+    projectJson.targets.serve.configurations.production = {
+      ...projectJson.targets.serve.configurations.development,
+      buildTarget: `${options.project}:pre-build:production`,
+    };
+
+    projectJson.targets.serve.options = {
+      ...projectJson.targets.serve.options,
+      buildTarget: `${options.project}:pre-build`,
+    };
+
     projectJson.targets.build = {
       executor: 'nx:run-commands',
       dependsOn: ['pre-build'],

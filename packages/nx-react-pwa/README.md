@@ -23,7 +23,7 @@ npm i @badgers-ua/nx-react-pwa --save-dev
 yarn add @badgers-ua/nx-react-pwa -D
 ```
 
-Inside nx dev directory run:
+Inside nx workspace run:
 
 ```bash
 nx g @badgers-ua/nx-react-pwa:init
