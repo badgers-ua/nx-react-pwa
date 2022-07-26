@@ -1,12 +1,19 @@
 # Versions
 
-## 1.0.3
+## v1.0.4
+
+_Jul 28, 2022_
+
+- Service worker being registered only on production build
+- Disabled user-select css in PWA/standalone mode
+
+## v1.0.3
 
 _Jul 27, 2022_
 
 - Fixed broken `nx run project_name:serve` command
 
-## 1.0.2
+## v1.0.2
 
 _Jul 26, 2022_
 
