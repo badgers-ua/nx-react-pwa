@@ -5,13 +5,11 @@
   <p align="center">Badgers UA plugins for <a href="https://nx.dev" target="_blank">nx.dev</a> monorepos
     <p align="center">
 
-<p align="center">Nx React PWA App Demo: <a href="https://nx-react-pwa-e477e.web.app" target="_blank">https://nx-react-pwa-e477e.web.app</a></p>
-
 # Structure
 
-| Codebase                              |                   Description                   |
-| :------------------------------------ | :---------------------------------------------: |
-| [nx-react-pwa](packages/nx-react-pwa) | plugin adds offline PWA support to nx react app |
+| Codebase                              |                                                       Description                                                       |
+| :------------------------------------ | :---------------------------------------------------------------------------------------------------------------------: |
+| [nx-react-pwa](packages/nx-react-pwa) | Plugin adds offline PWA support to nx react app. <a href="https://nx-react-pwa-e477e.web.app" target="_blacnk">Demo</a> |
 
 ## License
 
