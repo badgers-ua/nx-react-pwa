@@ -5,7 +5,7 @@
   <p align="center">Badgers UA plugins for <a href="https://nx.dev" target="_blank">nx.dev</a> monorepos
     <p align="center">
 
-### nx react pwa app demo: <a href="https://nx-react-pwa-e477e.web.app" target="_blank">https://nx-react-pwa-e477e.web.app</a>
+<p align="center">Nx React PWA App Demo: <a href="https://nx-react-pwa-e477e.web.app" target="_blank">https://nx-react-pwa-e477e.web.app</a></p>
 
 # Structure
 
