@@ -5,6 +5,8 @@
   <p align="center">Badgers UA plugins for <a href="https://nx.dev" target="_blank">nx.dev</a> monorepos
     <p align="center">
 
+### nx react pwa app demo that uses @badgers-ua/nx-react-pwa plugin: https://nx-react-pwa-e477e.web.app/
+
 # Structure
 
 | Codebase                              |                   Description                   |
